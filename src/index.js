@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './app';
+import GoogleAuth from './service/google_auth';
+import { firebaseApp } from './service/firebase';
+
+const googleAuth = new GoogleAuth(firebaseApp);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App googleAuth={googleAuth}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
