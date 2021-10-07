@@ -1,0 +1,26 @@
+@value makerWhite, makerYellow, makerShadow from '../../common/colors.css';
+@value makerRadius from '../../common/size.css';
+
+.header {
+  width: 100vw;
+  height: 3rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  box-shadow: makerShadow;
+  background-color: makerWhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.logout {
+  border: none;
+  border-radius: makerRadius;
+  padding: 0.5rem 1rem;
+  background-color: makerYellow;
+  color: makerWhite;
+}

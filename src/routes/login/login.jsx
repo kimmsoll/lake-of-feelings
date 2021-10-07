@@ -25,16 +25,16 @@ const Login = ({googleAuth}) => {
     });
 
     return(
-        <>
-        <h1 className={styles.title}>login</h1>
+        <section className={styles.login}>
+        <h1 className={styles.title}>Login</h1>
         <div className={styles.buttons}>
             <button
-            className={styles.button}
+            className={`${styles.button} ${styles.google}`}
             onClick={onGoogleLogin}>Google</button>
             <button
             className={styles.button}>Email</button>
         </div>
-        </>
+        </section>
     );
 }
 

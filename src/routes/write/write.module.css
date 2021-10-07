@@ -1,0 +1,51 @@
+@value makerYellow, makerBlack, makerShadow from '../../common/colors.css';
+@value makerRadius from '../../common/size.css';
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: makerBlack;
+}
+
+.emotions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 15rem;
+  height: auto;
+  padding-right: 2.5rem;
+  list-style-type: none;
+}
+
+.emotion {
+  width: 4rem;
+}
+
+.input {
+  font-size: 1rem;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: makerRadius;
+  color: makerBlack;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: makerShadow;
+}
+
+.buttons {
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}

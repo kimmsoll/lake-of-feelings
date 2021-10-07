@@ -1,0 +1,16 @@
+@value makerGrey, makerShadow from '../../common/colors.css';
+@value makerRadius from '../../common/size.css';
+
+.button {
+  border: none;
+  border-radius: makerRadius;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  box-shadow: makerShadow;
+  color: makerGrey;
+  font-size: 1rem;
+}
+
+.text {
+  margin-left: 1rem;
+}
