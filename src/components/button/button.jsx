@@ -5,8 +5,8 @@ const Button = ({icon, text}) => {
     return(
         <>
         <button className={styles.button}>
-            <i className={icon}></i>
-            <span className={styles.text}>{text}</span>
+        <i className={icon}></i>
+        <span className={styles.text}>{text}</span>
         </button>
         </>
     )

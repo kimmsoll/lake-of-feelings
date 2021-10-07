@@ -20,15 +20,63 @@
   justify-content: center;
   width: 15rem;
   height: auto;
-  padding-right: 2.5rem;
-  list-style-type: none;
+  margin: 1rem 0;
 }
 
-.emotion {
+[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+[type='radio'] + label {
   width: 4rem;
+  cursor: pointer;
+}
+[type='radio'] + label:hover {
+  animation: move 0.1s infinite ease-in-out alternate-reverse;
+}
+[type='radio']:checked + label {
+  animation: toBig 3s ease-in-out backwards;
 }
 
-.input {
+@keyframes move {
+  from {
+    transform: rotate(0.05turn);
+  }
+  to {
+    transform: rotate(-0.05turn);
+  }
+}
+@keyframes toBig {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.img1 {
+  content: url(http://localhost:3000/img/small1.png);
+}
+.img2 {
+  content: url(http://localhost:3000/img/small2.png);
+}
+.img3 {
+  content: url(http://localhost:3000/img/small3.png);
+}
+.img4 {
+  content: url(http://localhost:3000/img/small4.png);
+}
+.img5 {
+  content: url(http://localhost:3000/img/small5.png);
+}
+
+.textInput {
   font-size: 1rem;
   border: none;
   resize: none;
@@ -36,9 +84,10 @@
   padding: 1rem;
   border-radius: makerRadius;
   color: makerBlack;
+  margin-top: 1rem;
 }
 
-.input:focus {
+.textInput:focus {
   outline: none;
   box-shadow: makerShadow;
 }
@@ -47,5 +96,4 @@
   width: 15rem;
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem;
 }
