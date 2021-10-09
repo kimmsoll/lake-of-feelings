@@ -36,17 +36,17 @@ const Home = ({googleAuth}) => {
         <>
         <section className={styles.home}>
         <Header onLogout={onLogout}/>
-            <div className="lake">
-        <Lake emotions={emotions}/>
-            </div>
-            <div className="write">
-        <WriteForm
-        formRef={formRef}
-        messageRef={messageRef}
-        onSelect={selectEmotion}
-        onAdd={createEmotion}
-        />
-            </div>
+        <div className="lake">
+            <Lake emotions={emotions}/>
+        </div>
+        <div className="write">
+            <WriteForm
+            formRef={formRef}
+            messageRef={messageRef}
+            onSelect={selectEmotion}
+            onAdd={createEmotion}
+            />
+        </div>
         </section>
         </>
     )

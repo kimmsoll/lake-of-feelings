@@ -4,6 +4,8 @@
   width: 50vw;
   height: 70vh;
   background-color: pink;
+  position: relative;
+  overflow: hidden;
 }
 
 @media screen and (max-width: smallScreen) {
@@ -16,25 +18,25 @@
 .emotion1 {
   width: 100%;
   height: 20%;
-  background-color: rgb(255, 255, 155);
+  background-color: lightgoldenrodyellow;
 }
 .emotion2 {
   width: 100%;
   height: 20%;
-  background-color: rgb(179, 255, 179);
+  background-color: rgb(202, 255, 202);
 }
 .emotion3 {
   width: 100%;
   height: 20%;
-  background-color: rgb(227, 193, 255);
+  background-color: rgb(216, 157, 255);
 }
 .emotion4 {
   width: 100%;
   height: 20%;
-  background-color: rgb(106, 106, 255);
+  background-color: lightskyblue;
 }
 .emotion5 {
   width: 100%;
   height: 20%;
-  background-color: rgb(255, 147, 147);
+  background-color: rgb(255, 158, 147);
 }

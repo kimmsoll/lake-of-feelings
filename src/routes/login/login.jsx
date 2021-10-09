@@ -7,20 +7,20 @@ const Login = ({googleAuth}) => {
 
     const onGoogleLogin = () => {
         googleAuth.login()
-        .then(data => goToWrite(data.user.uid));
+        .then(data => goToHome(data.user.uid));
         
     };
 
-    const goToWrite = (userId) => {
+    const goToHome = (userId) => {
         history.push({
-            pathname: '/write',
+            pathname: '/home',
             state : {id: userId}
         });
     };
 
     useEffect(() => {
         googleAuth.onAuthChange(user => {
-        user && goToWrite(user.uid);
+        user && goToHome(user.uid);
         });
     });
 
