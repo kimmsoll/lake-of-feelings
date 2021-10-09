@@ -6,7 +6,9 @@ const Button = ({icon, text}) => {
         <>
         <button className={styles.button}>
         <i className={icon}></i>
-        <span className={styles.text}>{text}</span>
+        {text && 
+        <span className={styles.text}>{text}</span>        
+        }
         </button>
         </>
     )

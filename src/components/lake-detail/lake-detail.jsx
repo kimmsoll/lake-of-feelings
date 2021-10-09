@@ -8,6 +8,8 @@ const LakeDetail = ({name, emotions}) => {
             emotions[key]["number"] === name &&
             (<Emotion
             key={key}
+            id={key}
+            text={emotions[key]["text"]}
             emotionNum={emotions[key]["number"]}
             />)
             ))
