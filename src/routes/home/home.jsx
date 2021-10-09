@@ -21,14 +21,16 @@ const Home = ({googleAuth}) => {
     const createEmotion = () => {
         const emotion = {
             id: Date.now(),
-            number: selects[selects.length-1],
-            text: messageRef.current.value,
+            number: selects.length>0 && selects[selects.length-1],
+            text: messageRef.current.value || "",
         };
         setEmotions(emotions => {
-            const updated = {...emotions};
-            updated[emotion.id] = emotion;
-            selects=[];
-            return updated;
+            if(emotions.length>0){
+                const updated = {...emotions};
+                updated[emotion.id] = emotion;
+                selects=[];
+                return updated;
+            }
         });
         formRef.current.reset();
     }

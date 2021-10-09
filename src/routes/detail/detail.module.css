@@ -1,0 +1,33 @@
+@value makerRadius from '../../common/size.css';
+@value makerWhite, makerShadow, makerGrey from '../../common/colors.css';
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail {
+  width: 20em;
+  height: 30em;
+  border-radius: makerRadius;
+  box-shadow: makerShadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: makerWhite;
+}
+
+.image {
+  width: 8em;
+}
+
+.text {
+  color: makerGrey;
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-position: under;
+}

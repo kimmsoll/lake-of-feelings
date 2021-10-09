@@ -4,13 +4,16 @@ import Emotion from '../emotion/emotion';
 const LakeDetail = ({name, emotions}) => {
     return(
         <>
-        {Object.keys(emotions).map(key=>(
-            emotions[key]["number"] === name &&
-            (<Emotion
-            key={key}
-            emotionNum={emotions[key]["number"]}
-            />)
-            ))
+        {emotions && emotions.length > 0 &&
+            Object.keys(emotions).map(key=>(
+                emotions[key]["number"] === name &&
+                (<Emotion
+                key={key}
+                id={key}
+                emotionNum={emotions[key]["number"]}
+                text={emotions[key]["text"]}
+                />)
+                ))
         }
         </>
     );
