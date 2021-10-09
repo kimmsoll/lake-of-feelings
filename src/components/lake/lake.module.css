@@ -1,15 +1,16 @@
-.main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@value smallScreen from '../../common/size.css';
 
 .content {
-  width: 40%;
-  height: 30em;
-  background-color: beige;
+  width: 50vw;
+  height: 70vh;
+  background-color: pink;
+}
+
+@media screen and (max-width: smallScreen) {
+  .content {
+    width: 70vw;
+    height: 80vh;
+  }
 }
 
 .emotion1 {

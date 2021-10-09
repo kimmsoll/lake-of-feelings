@@ -2,19 +2,21 @@
 @value makerRadius from '../../common/size.css';
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: 3rem;
   padding: 0 1rem;
+  top: 0;
   box-sizing: border-box;
   box-shadow: makerShadow;
   background-color: makerWhite;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
 }
 
 .logo {
-  height: 2rem;
+  height: 3rem;
 }
 
 .logout {

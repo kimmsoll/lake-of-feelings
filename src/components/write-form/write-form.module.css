@@ -1,9 +1,7 @@
 @value makerYellow, makerBlack, makerShadow from '../../common/colors.css';
-@value makerRadius from '../../common/size.css';
+@value makerRadius, smallScreen from '../../common/size.css';
 
-.main {
-  height: 100vh;
-  width: 100%;
+.write {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +10,7 @@
 
 .title {
   color: makerBlack;
+  font-size: 1.5rem;
 }
 
 .emotions {
@@ -92,8 +91,8 @@
   box-shadow: makerShadow;
 }
 
-.buttons {
-  width: 15rem;
-  display: flex;
-  justify-content: space-around;
+@media screen and (max-width: smallScreen) {
+  .button {
+    margin-bottom: 10em;
+  }
 }
