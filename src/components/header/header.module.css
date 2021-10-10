@@ -25,4 +25,5 @@
   padding: 0.5rem 1rem;
   background-color: makerYellow;
   color: makerWhite;
+  cursor: pointer;
 }

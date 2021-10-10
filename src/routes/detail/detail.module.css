@@ -1,4 +1,4 @@
-@value makerRadius from '../../common/size.css';
+@value makerRadius, smallScreen from '../../common/size.css';
 @value makerWhite, makerShadow, makerGrey from '../../common/colors.css';
 
 .main {
@@ -21,6 +21,7 @@
   background-color: makerWhite;
   position: relative;
 }
+
 .image {
   width: 8em;
 }
@@ -43,8 +44,37 @@
   position: absolute;
   top: 2em;
   right: 2em;
+  cursor: pointer;
 }
+
 .btn_remove {
   position: absolute;
   bottom: 2em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: smallScreen) {
+  .detail {
+    width: 15em;
+    height: 20em;
+  }
+  .image {
+    width: 5em;
+  }
+  .textbox {
+    height: 8em;
+  }
+
+  .text {
+    font-size: 1.2em;
+  }
+
+  .btn_close {
+    top: 1em;
+    right: 1em;
+  }
+
+  .btn_remove {
+    bottom: 1em;
+  }
 }

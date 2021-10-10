@@ -1,4 +1,4 @@
-@value makerYellow, makerBlack, makerShadow from '../../common/colors.css';
+@value makerYellow, makerGrey, makerShadow from '../../common/colors.css';
 @value makerRadius, smallScreen from '../../common/size.css';
 
 .write {
@@ -9,7 +9,7 @@
 }
 
 .title {
-  color: makerBlack;
+  color: makerGrey;
   font-size: 1.5rem;
 }
 

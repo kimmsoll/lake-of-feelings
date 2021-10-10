@@ -1,42 +1,59 @@
-@value smallScreen from '../../common/size.css';
+@value smallScreen, makerRadius from '../../common/size.css';
 
 .content {
   width: 50vw;
   height: 70vh;
-  background-color: pink;
   position: relative;
   overflow: hidden;
+  border-radius: makerRadius;
+  background-color: rgb(200, 230, 255);
+}
+
+.emotion1,
+.emotion2,
+.emotion3,
+.emotion4,
+.emotion5 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave1 {
+  width: 180rem;
+  height: 180rem;
+  top: 3.5em;
+  left: -70em;
+  position: absolute;
+  border-radius: 47%;
+  background-color: rgb(47, 108, 199);
+  animation: move 30s infinite linear;
+}
+.wave2 {
+  width: 200rem;
+  height: 200rem;
+  top: 4em;
+  left: -80em;
+  position: absolute;
+  border-radius: 46.5%;
+  background-color: rgba(77, 134, 219, 0.8);
+  animation: move 40s infinite linear;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: smallScreen) {
   .content {
-    width: 70vw;
+    width: 80vw;
     height: 80vh;
   }
-}
-
-.emotion1 {
-  width: 100%;
-  height: 20%;
-  background-color: lightgoldenrodyellow;
-}
-.emotion2 {
-  width: 100%;
-  height: 20%;
-  background-color: rgb(202, 255, 202);
-}
-.emotion3 {
-  width: 100%;
-  height: 20%;
-  background-color: rgb(216, 157, 255);
-}
-.emotion4 {
-  width: 100%;
-  height: 20%;
-  background-color: lightskyblue;
-}
-.emotion5 {
-  width: 100%;
-  height: 20%;
-  background-color: rgb(255, 158, 147);
 }

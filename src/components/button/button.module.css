@@ -1,4 +1,4 @@
-@value makerGrey, makerShadow from '../../common/colors.css';
+@value makerWhite, makerYellow, makerGrey, makerShadow from '../../common/colors.css';
 @value makerRadius from '../../common/size.css';
 
 .button {
@@ -10,6 +10,12 @@
   color: makerGrey;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  color: makerWhite;
+  background-color: makerYellow;
 }
 
 .text {

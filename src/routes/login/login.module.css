@@ -1,5 +1,5 @@
 @value makerYellow, makerWhite, makerGrey from '../../common/colors.css';
-@value makerRadius from '../../common/size.css';
+@value smallScreen, makerRadius from '../../common/size.css';
 
 .login {
   width: 100%;
@@ -26,6 +26,12 @@
   justify-content: center;
 }
 
+@media screen and (max-width: smallScreen) {
+  .buttons {
+    width: 15em;
+  }
+}
+
 .button {
   width: 8em;
   padding: 0.5rem;
@@ -34,6 +40,14 @@
   border-radius: makerRadius;
   background-color: transparent;
   color: makerGrey;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  color: makerYellow;
+  border: 2px solid makerYellow;
+  box-shadow: inset 0px 0px 0px 3px makerYellow;
 }
 
 .button.google {

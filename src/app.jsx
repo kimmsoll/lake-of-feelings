@@ -4,7 +4,7 @@ import Login from './routes/login/login';
 import Home from './routes/home/home';
 import Detail from './routes/detail/detail';
 
-function App({googleAuth}) {
+function App({googleAuth, emotionRepo}) {
   return (
     <BrowserRouter>
     <Switch>
@@ -12,10 +12,15 @@ function App({googleAuth}) {
         <Login googleAuth={googleAuth}/>
       </Route>
       <Route path="/home">
-        <Home googleAuth={googleAuth}/>
+        <Home
+        googleAuth={googleAuth}
+        emotionRepo={emotionRepo}
+        />
       </Route>
-      <Route path="/:id">
-        <Detail/>
+      <Route path="/emotion/:id">
+        <Detail
+        emotionRepo={emotionRepo}
+        />
       </Route>
     </Switch>
     </BrowserRouter>

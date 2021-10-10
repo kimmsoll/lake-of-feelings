@@ -1,4 +1,77 @@
+@value makerWhite, makerRed from '../../common/colors.css';
+
 .image {
   width: 3em;
   height: 3em;
+}
+
+.button {
+  box-shadow: none;
+  color: makerWhite;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  color: makerRed;
+}
+
+.image.emotion1 {
+  animation: circle 1.5s forwards infinite;
+}
+.image.emotion2 {
+  animation: move 1s alternate-reverse infinite;
+}
+.image.emotion3 {
+  animation: dance 1s alternate-reverse infinite;
+}
+.image.emotion4,
+.image.emotion5 {
+  animation: fade 3s alternate-reverse infinite;
+}
+
+@keyframes circle {
+  25% {
+    transform: rotate(30deg) translateX(0.5em);
+  }
+  50% {
+    transform: rotate(-30deg) translateY(1em);
+  }
+  75% {
+    transform: rotate(0deg) translateX(-0.2em);
+  }
+}
+
+@keyframes dance {
+  25% {
+    transform: rotate(5deg) translateX(0.5em);
+  }
+  50% {
+    transform: rotate(-5deg) translateX(-0.5em);
+  }
+  75% {
+    transform: rotate(0deg) translateX(0.5em);
+  }
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(0.5em);
+  }
+  50% {
+    transform: translateX(0.5em);
+  }
+  75% {
+    transform: translateY(-0.5em);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0.5;
+  }
 }

@@ -23,7 +23,7 @@
 @media screen and (max-width: smallScreen) {
   .home {
     height: 100%;
-    padding: 10em 0;
+    padding: 10em 0 5em 0;
     flex-direction: column-reverse;
     align-items: center;
   }
