@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# LOFS(Lake Of Feelings)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 1. 소개(Introduction)
+- 기록하고 싶은 감정들을 기록하여 호수에 모아볼 수 있는 감정 일기입니다.
+- 구글 아이디로 로그인을 하면 나만의 home으로 이동합니다.
+- 다섯 가지 감정 중 하나를 선택하고 텍스트를 입력하면, 새로운 감정이 생성됩니다.
+- 기쁜 감정은 호수 위에, 슬픈 감정은 호수 아래에 나타납니다.
+- 호수에 나타난 각 감정들을 누르면 디테일 화면으로 이동합니다.
+- 디테일 화면에서 감정을 삭제할 수 있습니다.
+- 로그아웃을 해도 감정들이 저장되어 유지됩니다.
+</br>
+ 
+### 2. 사용 스택(Skills)
+- React, React Hook, Post CSS, Firebase SDK
+</br>
+ 
+### 3. 배포 링크(Preview)
+- https://lofs.netlify.app
+<img width="800" alt="img1" src="https://user-images.githubusercontent.com/62868465/136769513-37be0497-4a81-47d9-8cd5-ec685e6b0085.png"/>
+<img width="800" alt="img2" src="https://user-images.githubusercontent.com/62868465/136769612-006417ff-ba08-4e2d-9979-95fb0057babf.png"/>
+<img width="800" alt="img3" src="https://user-images.githubusercontent.com/62868465/136769662-b83b14bf-ae11-4ddf-b51e-e436908bc6fa.png"/>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 4. 남은 과제(Things to do)
+- 이메일 로그인 구현
+- ios/android 로그인 구현
