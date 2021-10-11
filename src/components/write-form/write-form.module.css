@@ -2,6 +2,8 @@
 @value makerRadius, smallScreen from '../../common/size.css';
 
 .write {
+  width: 30vw;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,12 +15,20 @@
   font-size: 1.5rem;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .emotions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 15rem;
-  height: auto;
+  align-items: center;
+  width: 15em;
+  height: 8em;
   margin: 1rem 0;
 }
 
@@ -30,6 +40,7 @@
 }
 [type='radio'] + label {
   width: 4rem;
+  height: 4rem;
   cursor: pointer;
 }
 [type='radio'] + label:hover {
@@ -60,22 +71,23 @@
 }
 
 .img1 {
-  content: url(http://localhost:3000/img/small1.png);
+  content: url(https://lofs.netlify.app/img/small1.png);
 }
 .img2 {
-  content: url(http://localhost:3000/img/small2.png);
+  content: url(https://lofs.netlify.app/img/small2.png);
 }
 .img3 {
-  content: url(http://localhost:3000/img/small3.png);
+  content: url(https://lofs.netlify.app/img/small3.png);
 }
 .img4 {
-  content: url(http://localhost:3000/img/small4.png);
+  content: url(https://lofs.netlify.app/img/small4.png);
 }
 .img5 {
-  content: url(http://localhost:3000/img/small5.png);
+  content: url(https://lofs.netlify.app/img/small5.png);
 }
 
 .textInput {
+  width: 70%;
   font-size: 1rem;
   border: none;
   resize: none;
@@ -83,7 +95,7 @@
   padding: 1rem;
   border-radius: makerRadius;
   color: makerBlack;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .textInput:focus {
@@ -92,7 +104,14 @@
 }
 
 @media screen and (max-width: smallScreen) {
-  .button {
+  .write {
+    width: 90vw;
+    height: 80vh;
     margin-bottom: 10em;
+  }
+
+  .title {
+    color: makerGrey;
+    font-size: 1.3rem;
   }
 }

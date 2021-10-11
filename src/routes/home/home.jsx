@@ -68,13 +68,13 @@ const Home = ({googleAuth, emotionRepo}) => {
         <>
         <section className={styles.home}>
         <Header onLogout={onLogout}/>
-        <div className="lake">
+        <div className={styles.lake}>
             <Lake
             userId={userId}
             emotions={emotions}
             />
         </div>
-        <div className="write">
+        <div className={styles.write}>
             <WriteForm
             formRef={formRef}
             messageRef={messageRef}

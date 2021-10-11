@@ -4,7 +4,7 @@ import styles from './lake.module.css';
 
 const Lake = ({emotions, userId}) => {
     return(
-        <>
+        <div className={styles.wrapper}>
         <section className={styles.content}>
         <div className={styles.wave1}></div>
         <div className={styles.wave2}></div>
@@ -24,7 +24,7 @@ const Lake = ({emotions, userId}) => {
             <LakeDetail userId={userId} name="emotion5" emotions={emotions}/>
             </div>
         </section>
-        </>
+        </div>
     );
 }
 

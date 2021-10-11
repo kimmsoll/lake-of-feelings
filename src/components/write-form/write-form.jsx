@@ -6,7 +6,8 @@ const WriteForm = ({onSelect, onAdd, formRef, messageRef}) => {
         <>
         <section className={styles.write}>
             <h1 className={styles.title}>오늘 하루는 어땠나요?</h1>
-            <form ref={formRef} className={styles.emotions} onClick={onSelect}>
+            <form ref={formRef} className={styles.form} onClick={onSelect}>
+            <div className={styles.emotions}>
                 <input type="radio" name="emotion1" id="emotion1"/>
                 <label htmlFor="emotion1" className={styles.img1}/>
                 <input type="radio" name="emotion2" id="emotion2"/>
@@ -17,6 +18,7 @@ const WriteForm = ({onSelect, onAdd, formRef, messageRef}) => {
                 <label htmlFor="emotion4" className={styles.img4}/>
                 <input type="radio" name="emotion5" id="emotion5"/>
                 <label htmlFor="emotion5" className={styles.img5}/>
+            </div>
                 <textarea
                 ref={messageRef}
                 name="textInput"
