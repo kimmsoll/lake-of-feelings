@@ -2,8 +2,8 @@
 @value makerRadius, smallScreen from '../../common/size.css';
 
 .write {
-  width: 30vw;
-  height: 80vh;
+  flex-basis: 25%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,11 +11,16 @@
 }
 
 .title {
+  width: 15em;
+  height: 2em;
   color: makerGrey;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .form {
+  width: 15em;
+  height: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,13 +28,12 @@
 }
 
 .emotions {
+  width: 15em;
+  height: 8em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 15em;
-  height: 8em;
-  margin: 1rem 0;
 }
 
 [type='radio'] {
@@ -87,7 +91,8 @@
 }
 
 .textInput {
-  width: 70%;
+  width: 13em;
+  height: 10em;
   font-size: 1rem;
   border: none;
   resize: none;
@@ -105,9 +110,7 @@
 
 @media screen and (max-width: smallScreen) {
   .write {
-    width: 90vw;
-    height: 80vh;
-    margin-bottom: 10em;
+    padding-bottom: 5rem;
   }
 
   .title {

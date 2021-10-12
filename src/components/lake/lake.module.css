@@ -1,17 +1,12 @@
 @value smallScreen, makerRadius from '../../common/size.css';
 
-.wrapper {
-  width: 50vw;
-  height: 70vh;
-  overflow: hidden;
-  border-radius: makerRadius;
-}
-
 .content {
-  width: 100%;
+  flex-basis: 50%;
+  max-width: 40em;
   height: 100%;
   position: relative;
   overflow: hidden;
+  isolation: isolate;
   border-radius: makerRadius;
   background-color: rgb(200, 230, 255);
 }
@@ -22,15 +17,11 @@
 .emotion4,
 .emotion5 {
   width: 100%;
-  height: 20%;
+  height: 7em;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.emotion5 {
-  border-bottom-left-radius: makerRadius;
-  border-bottom-right-radius: makerRadius;
+  border-radius: makerRadius;
 }
 
 .wave1 {
@@ -64,7 +55,7 @@
 }
 
 @media screen and (max-width: smallScreen) {
-  .wrapper {
+  .content {
     width: 80vw;
   }
 }
