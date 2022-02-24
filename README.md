@@ -30,6 +30,7 @@
 <img width="800" alt="img3" src="https://user-images.githubusercontent.com/62868465/136769662-b83b14bf-ae11-4ddf-b51e-e436908bc6fa.png"/>
 
 </br>
+
 ### 5. 남은 과제(Things to do)
 - 이메일 로그인 구현
 - ios/android 로그인 구현
