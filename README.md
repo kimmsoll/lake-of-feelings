@@ -6,6 +6,7 @@
 - Firebase SDK 로 구글 로그인  기능을 구현했습니다.
 - Firebase SDK 로 실시간 데이터베이스 기능을 추가했습니다.
 - 반응형으로 제작해, 모바일 / PC 맞춤형 크기의 UI로 나타납니다.
+</br>
 
 ### 2. 서비스 소개(Introduction - 02)
 - 기록하고 싶은 감정들을 기록하여 호수에 모아볼 수 있는 감정 일기입니다.
@@ -23,10 +24,12 @@
  
 ### 4. 배포 링크(Preview)
 - https://lofs.netlify.app
+</br>
 <img width="800" alt="img1" src="https://user-images.githubusercontent.com/62868465/136769513-37be0497-4a81-47d9-8cd5-ec685e6b0085.png"/>
 <img width="800" alt="img2" src="https://user-images.githubusercontent.com/62868465/136769612-006417ff-ba08-4e2d-9979-95fb0057babf.png"/>
 <img width="800" alt="img3" src="https://user-images.githubusercontent.com/62868465/136769662-b83b14bf-ae11-4ddf-b51e-e436908bc6fa.png"/>
 
+</br>
 ### 5. 남은 과제(Things to do)
 - 이메일 로그인 구현
 - ios/android 로그인 구현
