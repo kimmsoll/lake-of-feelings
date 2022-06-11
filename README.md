@@ -8,14 +8,14 @@
 ### 2. 기능 소개(Features)
 - Firebase SDK 로 구글 로그인 기능 구현
 - Firebase SDK 로 실시간 데이터베이스 기능 추가
-- React Hook, 함수형 컴포넌트 사용
+- React Hooks, 함수 컴포넌트 사용
 - Post CSS 모듈화 기능 사용
 - mediaQuery를 통해 반응형 UI 구현
 
 </br>
  
 ### 3. 사용 스택(Skills)
-React, React Hook, Post CSS, Firebase SDK
+React, React Hooks, React router, Post CSS, Firebase SDK
 
 </br>
  
